@@ -1,0 +1,32 @@
+<!-- assets/logo.svg -->
+<svg width="520" height="180" viewBox="0 0 520 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TI 3D Martin SA Corp">
+  <defs>
+    <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8F3FF"/>
+      <stop offset="100%" stop-color="#CFE6FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A8DFF"/>
+      <stop offset="100%" stop-color="#6FB3FF"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset dx="0" dy="2" result="off"/>
+      <feMerge><feMergeNode in="off"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ícono abstracto “3D” -->
+  <g transform="translate(355,18)" filter="url(#soft)">
+    <path d="M62 8c28 6 52 28 54 53 2 25-18 39-45 48-27 9-61 13-74-7-14-20 3-39 18-55 14-16 30-44 47-39z"
+          fill="url(#ice)" stroke="#B9D6FF" stroke-width="1.5"/>
+    <ellipse cx="80" cy="62" rx="30" ry="18" fill="url(#accent)" opacity="0.35"/>
+  </g>
+
+  <!-- Texto del logo -->
+  <g transform="translate(10,38)" fill="#0A2A4A" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+    <text x="0" y="0" font-weight="800" font-size="44" letter-spacing="0.5">TI 3D</text>
+    <text x="0" y="46" font-weight="700" font-size="38">Martin <tspan fill="#3A8DFF">SA</tspan></text>
+    <text x="0" y="90" font-weight="700" font-size="38">Corp</text>
+  </g>
+</svg>
